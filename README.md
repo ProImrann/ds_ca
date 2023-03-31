@@ -1,4 +1,4 @@
-# Background for the development of the chosen distributed system.
+# Background for the development of the chosen distributed system
 The development of this system was as a result of a problem of booking hotel and tracking the restaurant activities. Thus a need to come up with a solution that can allow multiple users at the same time without crushing the system and minimizing the errors encountered. Also, as multiple users can work together, it will be profitable to the restaurant by increasing sales, good marketing and reaching many people by using this web based distributed system. Also, there has been an increase demand fo a high availability and fault tolerant system, since in a centralized system, one system failure can cause the system to go down.
 
 Distributed systems allow resources to be connected and used together. Increased demand for scalability: Distributed systems can scale horizontally by adding more computers to the system. This allows the system to handle increased workloads and larger data sets.
