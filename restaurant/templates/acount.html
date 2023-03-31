@@ -1,0 +1,12 @@
+<!-- This is an acount page that displays the details of the current user, either a regular user or Librarian-->
+{% extends "base.html" %}
+{% block content %}
+<div class="login-box">
+    <div class="media">
+        <div class="media-body">
+            <h2 class="acount-heading">{{ current_user.username }}</h2>
+            <p class="text-secondary"> Email: {{ current_user.email }}</p>
+            <p class="text-secondary">User Type: {{ current_user.type }}</p>
+        </div>
+    </div>
+    {% endblock content %}

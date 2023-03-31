@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+{% for offer in offers %}
+<div class="offers">
+    <div class="offer_data">
+        <div class="border">
+            <div class="offer_details">
+                <h2><a href="{{url_for('offer', offer_id = offer.id)}}">ID: {{ offer.id}}</a></h2>
+                <img src="{{img_file}}" alt="">
+                <div class="">
+                    <div class="">
+                        <h6 class="">Offer name: {{ offer.offer_name }}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="offer_details">
+                <div class="column">
+                    <p class="laptop-content">Offer type: {{offer.offer_type }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

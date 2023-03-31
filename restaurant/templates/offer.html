@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="detailed_offer_content">
+    <div class="offer_content">
+
+        {% if current_user.type =='Employee' %}
+        <a href="{{url_for('update_offer', offer_id = offer.id)}}">Update Offer</a>
+        <a href="{{url_for('delete_offer', offer_id = offer.id)}}">Delete Offer</a>
+
+        {% endif %}
+        {% if current_user.type =='Admin' %}
+        <a href="{{url_for('update_offer', offer_id = offer.id)}}">Update Offer</a>
+        <a href="{{url_for('delete_offer', offer_id = offer.id)}}">Delete Offer</a>
+
+
+        {% endif %}
+        <div class="offer_title">
+            <h2>{{offer.offer_name}}</h2>
+        </div>
+        <div class="offer_img">
+            <img src="{{img_file}}" alt="">
+        </div>
+        <div class="offer_desc">
+            <p>{{offer.description}}</p>
+        </div>
+        <div class="borrow_class">
+            <p>Price: {{offer.price}}</p>
+            <p>Price: {{offer.type}}</p>
+
+        </div>
+        {% if current_user.type == 'User' %}
+        <a href="{{url_for('buy_offer', offer_id = offer.id)}}">Buy Offer</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

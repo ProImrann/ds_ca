@@ -1,0 +1,238 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(108, 190, 238);
+    height: 10%;
+    /* padding: 20px; */
+}
+
+.title {
+    padding: 5px;
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+}
+
+.home_img {
+    width: 100%;
+    background-image: url('/static/images/home_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_img h4 {
+    height: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+/* ------------------------------Login page------------------------------------- */
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 70px 30px;
+}
+
+.login-box h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box form .user-box {
+    position: relative;
+    margin: 0 0 20px;
+}
+
+.login-box form .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+}
+
+.login-box form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box form .user-box input:focus~label,
+.login-box form .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03a9f4;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+.login-box form a:hover {
+    background: #03a9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03a9f4,
+        0 0 25px #03a9f4,
+        0 0 50px
+}
+
+/* ------------------------------About page css -------------------------------- */
+.about-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-desc {
+    width: 50%;
+}
+
+footer {
+    height: 10%;
+    position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgb(108, 190, 238);
+    padding: 10px;
+}
+
+.offers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.offer_data {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 2px rgb(76, 173, 230) solid;
+    border-radius: 5px;
+
+}
+
+.border {
+    padding: 20px;
+}
+
+.offer_details {
+    width: 100%;
+}
+
+.offer_details img {
+    width: 100%;
+}
+
+.detailed_offer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.offer_content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer_content img {
+    width: 100%;
+}
